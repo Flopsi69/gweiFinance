@@ -1,0 +1,44 @@
+.footer {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 32px 0;
+  @include md-block {
+    padding-bottom: 50px;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
+    @include md-block {
+      flex-flow: column;
+    }
+  }
+  &__copyright {
+    color: rgba(255, 255, 255, 0.6);
+    @include md-block {
+      text-align: center;
+      order: 3;
+    }
+  }
+  &__links {
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    @include md-block {
+      margin: 32px 0;
+      order: 2;
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: #32CDEF;
+        background: linear-gradient(90deg, rgba(50,205,239,1) 0%, rgba(9,100,236,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      & + a {
+        margin-left: 32px;
+      }
+    }
+  }
+}

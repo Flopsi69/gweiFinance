@@ -1,34 +1,299 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GWEI Finance</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- EndFonts -->
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="jumb">
+    <video autoplay muted loop class='jumb__video'>
+      <source src="jumb-anim-min.mp4" type="video/mp4">
+    </video>
+    <div class="container jumb__container">
+      <div class="jumb__info">
+        <h1 class='jumb__title title'>GWEI <span>finance</span></h1>
+
+        <div class="jumb__descr text">Your Path to Simple Active Liquidity <br> Management in Uniswap V3</div>
+
+        <div class="jumb__buttons">
+          <button class='btn btn_blue jumb__buttons-item'>Use GWEI</button>
+          <button class='btn btn_trans jumb__buttons-item'>Show more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class='main container'>
+    <!-- Calculator -->
+    <section class="section calc" id='calc'>
+      <!-- Title -->
+      <h2 class="about__title title">Calculator</h2>
+
+      <!-- Descr -->
+      <div class="calc__descr text">Calculate your potential profit and compare with your current <br> earnings (based on your past transactions/contracts)</div>
+
+      <!-- Temp Placeholder -->
+      <img class='calc__placeholder' src="img/calc-placeholder.png" alt="">
+    </section>
+
+    <!-- Luchy section -->
+    <section class='section lucky'>
+      <div class="lucky__inner">
+        <!-- Image -->
+        <div class="lucky__image">
+          <img src="img/lucky.svg" alt="">
+        </div>
+
+        <!-- Info -->
+        <div class="lucky__info">
+          <h2 class="lucky__title title">Feeling <span>lucky?</span></h2>
+
+          <div class="lucky__descr text">Feeling Lucky? Submit your wallet and you might get a chance at getting that NFT!</div>
+
+          <button class="btn btn_blue lucky__btn">Submit wallet</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="section about plate">
+      <!-- Title -->
+      <h2 class="about__title title">About <span>us</span></h2>
+
+      <!-- Descr -->
+      <div class="about__info text">
+        <p>
+          We’re a smart-ass team with extensive experience in DeFi (Uniswap) and MEV extraction. The V3 opens up exciting new horizons in liquidity and capital efficiency.
+        </p>
+        <p>
+          We truly believe in the V3’s possibilities and are confident that our unique hybrid strategy will make us leaders in the Liquidity Management arena.
+        </p>
+      </div>
+    </section>
+
+    <!-- Finance section -->
+    <section class="section finance">
+      <!-- Info -->
+      <div class="finance__info">
+        <!-- Title -->
+        <h2 class="finance__title title">Why gwei <br> <span>finance&nbsp;?</span></h2>
+
+        <!-- Descr -->
+        <div class="finance__descr text">
+          <p>
+            Tired of self-active rebalancing and reinvesting? It’s so damn boring—not to mention risky! We all know that feeling when impermanent loss becomes permanent. ^_^
+          </p>
+          <p>
+            After days of sleepless nights, we’ve got something very exciting to share with you all.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="finance__image">
+        <img src="img/finance.svg" alt="">
+      </div>
+    </section>
+
+    <!-- Strategy section -->
+    <section class="section strategy">
+      <!-- Image -->
+      <div class="strategy__image">
+        <img src="img/strategy.svg" alt="">
+      </div>
+
+      <!-- Info -->
+      <div class="strategy__info">
+        <!-- Title -->
+        <h2 class="strategy__title title">What’s gwei <br> <span>strategy?</span></h2>
+
+        <!-- Descr -->
+        <div class="strategy__descr text">
+          <p>
+            Believe it or not—we will never need to rebalance storage in its classic form. Due to hybrid rebalancing, we never reach the point where we need to reallocate 50% of one asset to another.
+          </p>
+          <p>
+            As for volatility—we’re going to use classic indicators such as Keltner Channels and/or Bollinger Bands, but the difference is that our model, which we’ve already back-tested, works wonders!
+          </p>
+          <p>
+            We can’t disclose much more information at this time; however we’ll give you a tiny insight: All of the magic comes from mempool
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notes -->
+    <section class="section notes">
+      <!-- Side -->
+      <div class="notes__side">
+        <div class="notes__item plate">
+          <div class="notes__icon">
+            <img src="img/notes-1.svg" alt="">
+          </div>
+          <div class="notes__descr text">
+            As for the volatility - we are going to use classic indicators such as Keltner Channels and/or Bollinger Bands, but the main perk is our model that we already back tested and it does make wonders!
+          </div>
+        </div>
+      </div>
+
+      <!-- Side -->
+      <div class="notes__side">
+        <div class="notes__item plate">
+          <div class="notes__icon">
+            <img src="img/notes-2.svg" alt="">
+          </div>
+          <div class="notes__descr text">
+            Currently, we, unfortunately, cannot disclose much more information, but we give you a tip - all the magic comes from mempool. Believe us, it's worth it and soon you will see it for yourself
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sold section -->
+    <section class="section sold">
+      <!-- Info -->
+      <div class="sold__info">
+        <!-- Title -->
+        <h2 class="sold__title title">I’m <span>sold!</span></h2>
+
+        <!-- Descr -->
+        <div class="sold__descr text">
+          How do I join the greatness? <br>
+          You need an NFT as an invitation to join our vaults
+        </div>
+
+        <!-- Btn -->
+        <button class="btn btn_blue sold__btn">Submit wallet</button>
+      </div>
+
+      <!-- Image -->
+      <div class="sold__image">
+        <img src="img/sold.svg" alt="">
+      </div>
+    </section>
+
+    <!-- Subscribe section -->
+    <section class="section subscribe plate">
+      <!-- Title -->
+      <h2 class="subscribe__title title">Subscribe <span>now</span></h2>
+
+      <!-- Descr -->
+      <div class="subscribe__info text">
+        Subscribe to get notified about all of our updates and progress!
+      </div>
+
+      <!-- Form -->
+      <form action="" class="subscribe__form">
+        <input placeholder="E-mail address" type="text" class="subscribe__input input">
+        <button class="btn btn_blue subscribe__btn">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Roadmap section -->
+    <section class="section roadmap" id='roadmap'>
+      <!-- Title -->
+      <h2 class="roadmap__title title">Our <span>roadmap</span></h2>
+
+      <!-- Row -->
+      <div class="roadmap__inner">
+        <div class="roadmap__item plate">
+          <div class="roadmap__item-date">July 20 th</div>
+          <div class="roadmap__item-title">First GWEI announcement</div>
+          <ul class="roadmap__item-list">
+            <li>– Vaults and strategy development</li>
+            <li>– Back-testing</li>
+            <li>– NFTs sent out as invitations to our alpha vault/pool</li>
+            <li>– Data analysis, polishing our strategy to perfection</li>
+            <li>– Audit of contracts</li>
+            <li>– Token launch</li>
+            <li>– Airdrop to the first 100 LPs</li>
+          </ul>
+        </div>
+
+        <div class="roadmap__item plate">
+          <div class="roadmap__item-date">October 20 th</div>
+          <div class="roadmap__item-title">First GWEI announcement</div>
+          <ul class="roadmap__item-list">
+            <li>— Data analysis, polishing our strategy to perfection</li>
+            <li>— Audit of contracts</li>
+            <li>— Token launch</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="section faq" id='faq'>
+      <!-- Title -->
+      <h2 class="faq__title title">Fa<span>q</span></h2>
+
+      <!-- List -->
+      <ul class="faq__list plate">
+        <li class='faq__item'>
+          <div class="faq__item-title">
+            When will your vaults go live?
+          </div>
+          <div class="faq__item-descr">
+            We expect inception vaults (limited) to launch by the end of August. Once we pass all the audits, we will increase the limits.
+          </div>
+        </li>
+
+        <li class='faq__item'>
+          <div class="faq__item-title">
+            Do you have your own token / $GWEI?
+          </div>
+          <div class="faq__item-descr">
+            We expect inception vaults (limited) to launch by the end of August. Once we pass all the audits, we will increase the limits.
+          </div>
+        </li>
+
+        <li class='faq__item'>
+          <div class="faq__item-title">
+            What are your fees?
+          </div>
+          <div class="faq__item-descr">
+            We expect inception vaults (limited) to launch by the end of August. Once we pass all the audits, we will increase the limits.
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
 </html>
