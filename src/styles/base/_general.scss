@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, ul {
     padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -253,7 +257,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
+  height: 100%;
   padding-top: 100px;
   padding-bottom: 50px;
   overflow: hidden;
