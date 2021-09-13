@@ -65,7 +65,7 @@ body {
   color: #fff;
   border-radius: 12px;
   text-decoration: none;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  // text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
   &_blue {
     &:before {
       content: '';
@@ -130,16 +130,21 @@ body {
 
 .title {
   font-family: $exo;
-  font-weight: 400;
   font-size: 60px;
+  font-weight: 400;
   line-height: 1.15;
   text-transform: uppercase;
   margin-bottom: 28px;
   color: #32CDEF;
-  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.8), 0px 4px 54px rgba(34, 183, 216, 0.7), -4px -4px 45px rgba(27, 137, 235, 0.6), 4px 4px 30px rgba(50, 205, 239, 0.6);
-  animation: blinkText 3.5s infinite;
+  // text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.8), 0px 4px 54px rgba(34, 183, 216, 0.7), -4px -4px 45px rgba(27, 137, 235, 0.6), 4px 4px 30px rgba(50, 205, 239, 0.6);
+  // span {
+  //   text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.8), 0px 4px 54px rgba(216, 34, 78, 0.7), -4px -4px 45px rgba(235, 27, 39, 0.6), 4px 4px 30px rgba(239, 50, 73, 0.6);
+  //   color: #EF328D;
+  // }
+
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.95), 0px 4px 54px rgba(34, 183, 216, 0.9), -4px -4px 45px rgba(27, 137, 235, 0.95), 4px 4px 30px rgba(50, 205, 239, 0.95);
   span {
-    text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.8), 0px 4px 54px rgba(216, 34, 78, 0.7), -4px -4px 45px rgba(235, 27, 39, 0.6), 4px 4px 30px rgba(239, 50, 73, 0.6);
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.95), 0px 4px 54px rgba(216, 34, 78, 0.9), -4px -4px 45px rgba(235, 27, 39, 0.95), 4px 4px 30px rgba(239, 50, 73, 0.95);
     color: #EF328D;
   }
   @include sm-block {
@@ -147,11 +152,14 @@ body {
     line-height: 1.25;
     letter-spacing: 0.5px;
   }
+  &_anim {
+    animation: blinkText 2s infinite;
+    font-weight: 400;
+  }
 }
 
 @keyframes blinkText {
   50% {font-weight: 700;}
-  // 100% {font-weight: 700;}
 }
 
 .text {
@@ -362,6 +370,7 @@ body {
   }
   &__image {
     img {
+      max-width: 530px;
       @include sm-block {
         width: 180px;
       }
@@ -406,6 +415,7 @@ body {
   }
   &__image {
     img {
+      max-width: 420px;
       @include sm-block {
         width: 165px;
       }
@@ -437,12 +447,21 @@ body {
     }
   }
   &__image {
+    img {
+      max-width: 425px;
+    }
     @include lg-block {
       margin-right: -2%;
       margin-bottom: 28px;
       img {
         max-width: 245px;
       }
+    }
+  }
+  &__btn {
+    margin-top: 60px;
+    @include sm-block {
+      margin-top: 32px;
     }
   }
 }
@@ -530,6 +549,7 @@ body {
   &__image {
     margin-bottom: 15px;
     img {
+      max-width: 410px;
       @include sm-block {
         max-width: 135px;
       }

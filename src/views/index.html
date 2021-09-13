@@ -38,8 +38,10 @@
   @@include("../blocks/modules/header/header.html")
 
   <div class="jumb">
-    <video autoplay muted loop class='jumb__video'>
-      <source src="./jumb-anim-min.mp4" type="video/mp4">
+    <video poster='./img/poster.png' autoplay muted loop class='jumb__video'>
+      <source src="./video.mp4" type="video/mp4">
+      <source src="./video.ogg" type="video/ogg">
+      <source src="./video.webm" type="video/webm">
     </video>
     <div class="container jumb__container">
       <div class="jumb__info">
@@ -73,12 +75,12 @@
       <div class="lucky__inner">
         <!-- Image -->
         <div class="lucky__image">
-          <img src="img/lucky.svg" alt="">
+          <img src="img/lucky.png" alt="">
         </div>
 
         <!-- Info -->
         <div class="lucky__info">
-          <h2 class="lucky__title title">Feeling <span>lucky?</span></h2>
+          <h2 class="lucky__title title title_anim">Feeling <span>lucky?</span></h2>
 
           <div class="lucky__descr text">Feeling Lucky? Submit your wallet and you might get a chance at getting that NFT!</div>
 
@@ -123,7 +125,7 @@
 
       <!-- Image -->
       <div class="finance__image">
-        <img src="img/finance.svg" alt="">
+        <img src="img/finance.png" alt="">
       </div>
     </section>
 
@@ -151,6 +153,9 @@
             We can’t disclose much more information at this time; however we’ll give you a tiny insight: All of the magic comes from mempool
           </p>
         </div>
+
+        <!-- Btn -->
+        <button class="btn btn_blue strategy__btn">Lern more</button>
       </div>
     </section>
 
@@ -200,7 +205,7 @@
 
       <!-- Image -->
       <div class="sold__image">
-        <img src="img/sold.svg" alt="">
+        <img src="img/sold.png" alt="">
       </div>
     </section>
 
