@@ -21,10 +21,10 @@
     padding: 12px 20px;
     color: rgba(255, 255, 255, 0.4);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    margin-left: 5%;
-    @include lg-block {
-      margin-left: 3%;
-    }
+    // margin-left: 5%;
+    // @include lg-block {
+    //   margin-left: 3%;
+    // }
     @include md-block {
       margin-left: auto;
     }
@@ -78,6 +78,7 @@
 }
 
 .nav {
+  margin: auto;
   @include md-block {
     // padding: 20px 0 30px;
   }

@@ -14,19 +14,11 @@ $('.burger').on('click', function (e) {
   $('.header__navbar').slideToggle();
 });
 
-$(document).on('click', '.header__nav a', function (event) {
+$(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
-  let scrollTop = 0;
-
-  if ($.attr(this, 'href') == '#home') {
-    scrollTop = 0;
-  } else {
-    scrollTop = $($.attr(this, 'href')).offset().top - 50;
-  }
-
   $('html, body').animate(
     {
-      scrollTop: scrollTop,
+      scrollTop: $($.attr(this, 'href')).offset().top - 50,
     },
     900
   );
