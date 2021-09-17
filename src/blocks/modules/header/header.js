@@ -1,4 +1,22 @@
 import $ from 'jQuery';
+// import WalletConnect from '@walletconnect/client';
+// import WalletConnectProvider from '@walletconnect/web3-provider';
+// import Web3 from 'web3';
+// import Web3Modal from 'web3modal';
+// import { ethers } from 'https://cdn.ethers.io/lib/ethers-5.2.esm.min.js';
+
+// const connector = new WalletConnect({
+//   bridge: 'https://bridge.walletconnect.org', // Required
+// });
+
+// if (!connector.connected) {
+//   // create new session
+//   console.log('yes');
+//   connector.createSession();
+// }
+
+// const webi = new Web3Modal();
+// webi.connect();
 
 $('.faq__item-title').on('click', function () {
   $(this)

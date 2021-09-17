@@ -31,7 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <!-- EndFonts -->
 
-  <link rel="stylesheet" href="styles/main.min.css">
+  <link rel="stylesheet" href="styles/main.min.css?ver=2.0">
 </head>
 
 <body>
@@ -83,7 +83,7 @@
 </header>
 
   <div class="jumb">
-    <video id='jumbVideo' preload="auto" poster='./img/poster.png' playsinline autoplay muted loop class='jumb__video'>
+    <video id='jumbVideo' preload="auto" poster='./img/poster.jpeg' playsinline autoplay muted loop class='jumb__video'>
       <source src="./video.mp4" type="video/mp4">
       <source src="./video.ogg" type="video/ogg">
       <source src="./video.webm" type="video/webm">
@@ -112,7 +112,8 @@
       <div class="calc__descr text">Calculate your potential profit and compare with your current <br> earnings (based on your past transactions/contracts)</div>
 
       <!-- Temp Placeholder -->
-      <img class='calc__placeholder' src="img/calc-placeholder.png" alt="">
+      <h2 class="title calc__placeholder">Coming <span>soon...</span></h2>
+      <!-- <img class='calc__placeholder' src="img/calc-placeholder.png" alt=""> -->
     </section>
 
     <!-- Luchy section -->
@@ -344,7 +345,7 @@
   <footer class="footer" id='docs'>
   <div class="container">
     <div class="footer__inner">
-      <div class="footer__copyright">&copy;2021 GWEI Finance. All rights res</div>
+      <div class="footer__copyright">&copy; 2021 GWEI Finance. All rights reserved</div>
 
       <div class="footer__links">
         <a href="#">GWEI overview</a>
@@ -371,8 +372,17 @@
     </div>
   </div>
 </footer>
-  <script src="js/main.min.js"></script>
-  <script src="js/vendor.min.js"></script>
+  <!-- <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.min.js" type="application/javascript"></script> -->
+  <!-- <script src="https://cdn.min.jsdelivr.net/npm/web3@latest/dist/web3.min.min.js"></script> -->
+  <script src="js/main.min.js?ver=2.0"></script>
+  <script src="js/vendor.min.js?ver=2.0"></script>
+
+  <!-- <script>
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    await provider.getBlockNumber()
+  </script> -->
+
 </body>
 
 </html>

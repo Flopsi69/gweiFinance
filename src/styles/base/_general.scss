@@ -145,7 +145,7 @@ body {
   //   text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.8), 0px 4px 54px rgba(216, 34, 78, 0.7), -4px -4px 45px rgba(235, 27, 39, 0.6), 4px 4px 30px rgba(239, 50, 73, 0.6);
   //   color: #EF328D;
   // }
-
+  // text-shadow: 0px 5px 3px rgba(106, 135, 241, 1), 0px 4px 54px rgba(34, 183, 216, 90%), -4px -4px 45px rgba(27, 137, 235, 95%), 4px 4px 30px rgba(50, 205, 239, 95%);
   text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.95), 0px 4px 54px rgba(34, 183, 216, 0.9), -4px -4px 45px rgba(27, 137, 235, 0.95), 4px 4px 30px rgba(50, 205, 239, 0.95);
   span {
     text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.95), 0px 4px 54px rgba(216, 34, 78, 0.9), -4px -4px 45px rgba(235, 27, 39, 0.95), 4px 4px 30px rgba(239, 50, 73, 0.95);
@@ -159,11 +159,24 @@ body {
   &_anim {
     animation: blinkText 2s infinite;
     font-weight: 400;
+    span {
+      animation: blinkTextRed 2s infinite;
+    }
   }
 }
 
 @keyframes blinkText {
-  50% {font-weight: 700;}
+  50% {
+    // font-weight: 700;
+    text-shadow: 0px 5px 3px rgba(106, 135, 241, 1), 0px 4px 54px rgba(34, 183, 216, 90%), -4px -4px 45px rgba(27, 137, 235, 95%), 4px 4px 30px rgba(50, 205, 239, 95%);
+  }
+}
+
+@keyframes blinkTextRed {
+  50% {
+    text-shadow: 0px 5px 3px rgba(197, 82, 82, 0.95), 0px 4px 54px rgba(216, 34, 78, 0.9), -4px -4px 45px rgba(235, 27, 39, 0.95), 4px 4px 30px rgba(239, 50, 73, 0.95);
+    color: #EF328D;
+  }
 }
 
 .text {
@@ -340,8 +353,11 @@ body {
   }
   &__placeholder {
     margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: 1px;
     @include sm-block {
       margin-top: 30px;
+      font-size: 22px;
     }
   }
 }
@@ -363,7 +379,7 @@ body {
     }
   }
   &__info {
-    max-width: 485px;
+    max-width: 500px;
     margin: auto;
   }
   &__btn {
@@ -488,7 +504,8 @@ body {
   &__item {
     padding: 65px 65px 60px;
     background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(20px);
+    // backdrop-filter: blur(20px);
+    // filter: blur(20px);
     @include sm-block {
       padding: 32px;
     }
@@ -504,10 +521,12 @@ body {
       &:before {
         content: '';
         position: absolute;
+        z-index: -1;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
+        filter: blur(15px);
         background: url('../img/notes-bg-1.png') center no-repeat;
       }
     }
@@ -515,10 +534,12 @@ body {
       &:before {
         content: '';
         position: absolute;
+        z-index: -1;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
+        filter: blur(15px);
         background: url('../img/notes-bg-2.png') center no-repeat;
       }
     }
