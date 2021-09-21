@@ -11,6 +11,9 @@
     top: 0;
     padding: 15px 0;
   }
+  &__logo {
+    line-height: 0;
+  }
   &__inner {
     display: flex;
     align-items: center;

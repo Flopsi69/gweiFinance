@@ -1,8 +1,8 @@
 .footer {
   background-color: rgba(255, 255, 255, 0.04);
   padding: 32px 0;
-  @include md-block {
-    padding-bottom: 50px;
+  @include sm-block {
+    // padding-bottom: 50px;
   }
   &__inner {
     display: flex;
@@ -10,35 +10,145 @@
     justify-content: space-between;
     font-size: 16px;
     line-height: 20px;
-    @include md-block {
+    @include sm-block {
       flex-flow: column;
     }
   }
   &__copyright {
     color: rgba(255, 255, 255, 0.6);
-    @include md-block {
+    @include sm-block {
       text-align: center;
+      margin-top: 25px;
       order: 3;
     }
   }
-  &__links {
-    color: rgba(255, 255, 255, 0.6);
-    display: flex;
-    @include md-block {
-      margin: 32px 0;
-      order: 2;
+  // &__links {
+  //   color: rgba(255, 255, 255, 0.6);
+  //   display: flex;
+  //   @include sm-block {
+  //     margin: 32px 0;
+  //     order: 2;
+  //   }
+  //   a {
+  //     text-decoration: underline;
+  //     &:hover {
+  //       color: #32CDEF;
+  //       background: linear-gradient(90deg, rgba(50,205,239,1) 0%, rgba(9,100,236,1) 100%);
+  //       -webkit-background-clip: text;
+  //       -webkit-text-fill-color: transparent;
+  //     }
+  //     & + a {
+  //       margin-left: 32px;
+  //     }
+  //   }
+  // }
+}
+
+
+
+/**** Modals ****/
+
+.modal {
+	position: fixed;
+	display: flex;
+	padding: 25px 20px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	outline: 0;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: rgba(black, .65);
+	transition: 0.35s;
+	pointer-events: none;
+	opacity: 0;
+	&_active {
+		opacity: 1;
+		pointer-events: auto;
+	}
+	&__body {
+		position: relative;
+		margin: auto;
+		display: none;
+		max-width: 500px;
+		width: 100%;
+    padding: 40px;
+    // box-shadow: 0 0 15px 1px rgba(236, 13, 147, 0.53);
+    box-shadow: 0 0 15px 1px #32CDEF;
+		background: #111328;
+    border-radius: 10px;
+    line-height: 1.4;
+    transition: box-shadow 0.35s;
+    // &:hover {
+		//   box-shadow: 0 0 15px 1px #32CDEF;
+    // }
+    @include sm-block {
+      border-radius: 5px;
+      padding: 45px 20px 35px;
+      box-shadow: 0 0 9px 1px rgba(#32CDEF, .7);
     }
-    a {
-      text-decoration: underline;
-      &:hover {
-        color: #32CDEF;
-        background: linear-gradient(90deg, rgba(50,205,239,1) 0%, rgba(9,100,236,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+	}
+	&__close {
+		position: absolute;
+		right: 0;
+		border: 0;
+		top: 0;
+		outline: none;
+		line-height: 0;
+		cursor: pointer;
+    border-radius: 0 10px 0 0;
+		background: rgb(236, 13, 147);
+		padding: rem(8);
+		transition: 0.35s;
+    @include sm-block {
+      border-radius: 0 5px 0 0;
+    }
+		&:hover {
+			background: darken(rgb(236, 13, 147), 10);
+		}
+		&-icon {
+			width: rem(15);
+			height: rem(15);
+		}
+	}
+  &__input {
+    width: 100%;
+    height: 50px;
+  }
+  &__label {
+    span {
+      font-size: 14px;
+      @include sm-block {
+        font-size: 12px;
       }
-      & + a {
-        margin-left: 32px;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 1.3;
+    #soon & {
+      margin-bottom: 0;
+      font-size: 40px;
+      @include sm-block {
+        font-size: 28px;
       }
+    }
+    @include sm-block {
+      font-size: 24px;
+    }
+  }
+  &__btn {
+    min-width: 50%;
+    position: relative;
+    z-index: 10;
+    &-wrap {
+      margin-top: 45px;
+      text-align: center;
     }
   }
 }

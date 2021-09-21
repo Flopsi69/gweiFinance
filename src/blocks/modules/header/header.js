@@ -41,3 +41,35 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     900
   );
 });
+
+// MODAL
+
+/* Modals */
+function modalClose() {
+  $('.modal').hasClass('modal_active')
+    ? $('.modal').removeClass('modal_active')
+    : $('.modal').addClass('modal_active');
+  $('.modal__body').slideUp();
+}
+
+$('.modal-trigger').on('click', function (e) {
+  e.preventDefault();
+  let target = $(this).attr('modal-target');
+  $('.modal').hasClass('modal_active')
+    ? $('.modal').removeClass('modal_active')
+    : $('.modal').addClass('modal_active');
+  $(target).delay(200).slideDown();
+});
+
+$('.modal__close').on('click', function (e) {
+  e.preventDefault();
+  modalClose();
+});
+
+$('.modal').on('click', function (e) {
+  if ($(e.target).hasClass('modal_active')) {
+    modalClose();
+  }
+});
+
+// document.referrer

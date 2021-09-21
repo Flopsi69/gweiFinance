@@ -3,11 +3,6 @@
     <div class="footer__inner">
       <div class="footer__copyright">&copy; 2021 GWEI Finance. All rights reserved</div>
 
-      <div class="footer__links">
-        <a href="#">GWEI overview</a>
-        <a href="#">Terms of Use</a>
-      </div>
-
       <div class="socials footer__socials">
         <a href="#" class="socials__item">
           <img src="img/social-medium.svg" alt="">
@@ -28,3 +23,42 @@
     </div>
   </div>
 </footer>
+
+<div class="modal modal_active">
+  <div class="modal__body" id='submit-wallet'>
+    <!-- Close modal -->
+    <button class="modal__close">
+      <svg class="modal__close-icon" fill='white' xmlns="http://www.w3.org/2000/svg" width="357" height="357" viewBox="0 0 357 357">
+        <path d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z" />
+      </svg>
+    </button>
+
+    <h2 class="modal__title title">Prove the following <br> <span>information:</span></h2>
+
+    <form class='modal__form' action="">
+      <div class="group">
+        <label class='modal__label label' for="wallet">Wallet</label>
+        <input placeholder="Wallet number" id='wallet' name='wallet' class='input modal__input' type="text">
+      </div>
+      <div class="group">
+        <label class='modal__label label' for="email">E-mail <span>(we will notify you got lucky!)</span></label>
+        <input id='email' name='email' class='input modal__input' placeholder="test@test.test" type="email">
+      </div>
+
+      <div class="modal__btn-wrap">
+        <button class="btn btn_blue modal__btn">Submit wallet</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal__body" id='soon' style='display: block;'>
+    <!-- Close modal -->
+    <button class="modal__close">
+      <svg class="modal__close-icon" fill='white' xmlns="http://www.w3.org/2000/svg" width="357" height="357" viewBox="0 0 357 357">
+        <path d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z" />
+      </svg>
+    </button>
+
+    <h2 class="modal__title title">Coming <span>soon...</span></h2>
+  </div>
+</div>
