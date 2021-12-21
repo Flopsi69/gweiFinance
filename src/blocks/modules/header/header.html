@@ -1,3 +1,7 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGKKQ5H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <header class="header">
   <div class="container">
     <div class="header__inner">
@@ -17,30 +21,53 @@
         <nav class="nav header__nav">
           <a href="#calc">Calculator</a>
           <a href="#finance">Why GWEI</a>
-          <a href="#docs">Docs</a>
+          <a href="http://docs.gwei.fi/">Docs</a>
         </nav>
 
         <div class="socials header__socials">
-          <a href="#" class="socials__item">
+          <a href="https://medium.com/@GweiFinance" class="socials__item">
             <img src="img/social-medium.svg" alt="">
           </a>
 
-          <a href="#" class="socials__item">
+          <a href="https://twitter.com/gweifinance" class="socials__item">
             <img src="img/social-twitter.svg" alt="">
           </a>
 
-          <a href="#" class="socials__item">
+          <a href="https://discord.gg/qKCBSGJk82" class="socials__item">
             <img src="img/social-discord.svg" alt="">
           </a>
 
-          <a href="#" class="socials__item">
+          <a href="https://t.me/gweifinance" class="socials__item">
             <img src="img/social-telegram.svg" alt="">
           </a>
         </div>
       </div>
 
-      <!-- Connect btn -->
-      <button class='btn btn_trans header__btn modal-trigger' modal-target='#soon'>Enter app</button>
+      <div class="header__control">
+        <!-- Connect btn -->
+        <!-- <button class='btn btn_trans header__btn modal-trigger' modal-target='#soon'>Enter app</button> -->
+
+        <button class='btn btn_trans header__btn header__btn-invoice'>
+          <img src="img/icon-invoice.svg" alt="">
+        </button>
+
+        <button class='btn btn_trans header__btn modal-trigger header-connect' modal-target='#select-wallet'>Connect wallet</button>
+
+
+        <div class="header-connected">
+          <div class="header-connected__user">
+            <img src="img/header-user.svg" alt="">
+          </div>
+          <div class="header-connected__info">
+            <div class="header-connected__balance">0 ETH</div>
+            <div class="header-connected__wallet">
+              0xru5w...a3b
+              <img src="img/arrow-down.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </header>

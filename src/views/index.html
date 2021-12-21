@@ -31,11 +31,74 @@
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <!-- EndFonts -->
 
-  <link rel="stylesheet" href="styles/main.css?ver=2.0">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGKKQ5H');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
-  @@include("../blocks/modules/header/header.html")
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGKKQ5H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <!-- Burger -->
+        <button class='burger header__burger'>
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.264 0H22.7347C23.4307 0 24 0.569333 24 1.26533V1.40133C24 2.09733 23.4307 2.66667 22.7347 2.66667H1.264C0.568 2.66667 0 2.09733 0 1.40133V1.26533C0 0.569333 0.568 0 1.264 0ZM22.7347 6.66667H1.264C0.568 6.66667 0 7.23601 0 7.932V8.068C0 8.764 0.568 9.33333 1.264 9.33333H22.7347C23.4307 9.33333 24 8.764 24 8.068V7.932C24 7.23601 23.4307 6.66667 22.7347 6.66667ZM22.7347 13.3333H1.264C0.568 13.3333 0 13.9027 0 14.5987V14.7347C0 15.4307 0.568 16 1.264 16H22.7347C23.4307 16 24 15.4307 24 14.7347V14.5987C24 13.9027 23.4307 13.3333 22.7347 13.3333Z" fill="white" />
+          </svg>
+        </button>
+
+        <!-- Navbar -->
+        <div class="header__navbar">
+          <a href='#' class="header__logo">
+            <img src="img/logo.png" alt="">
+          </a>
+
+          <nav class="nav header__nav">
+            <a href="#calc">Calculator</a>
+            <a href="#finance">Why GWEI</a>
+            <a href="http://docs.gwei.fi/">Docs</a>
+          </nav>
+
+          <div class="socials header__socials">
+            <a href="https://medium.com/@GweiFinance" class="socials__item">
+              <img src="img/social-medium.svg" alt="">
+            </a>
+
+            <a href="https://twitter.com/gweifinance" class="socials__item">
+              <img src="img/social-twitter.svg" alt="">
+            </a>
+
+            <a href="https://discord.gg/qKCBSGJk82" class="socials__item">
+              <img src="img/social-discord.svg" alt="">
+            </a>
+
+            <a href="https://t.me/gweifinance" class="socials__item">
+              <img src="img/social-telegram.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="header__control">
+          <!-- Connect btn -->
+          <button class='btn btn_trans header__btn modal-trigger' modal-target='#soon'>Enter app</button>
+        </div>
+
+      </div>
+    </div>
+  </header>
 
   <div class="jumb">
     <video id='jumbVideo' preload="auto" poster='./img/poster.jpeg' playsinline autoplay muted loop class='jumb__video'>
@@ -47,11 +110,11 @@
       <div class="jumb__info">
         <h1 class='jumb__title title'>GWEI <span>finance</span></h1>
 
-        <div class="jumb__descr text">Your Path to Simple Active Liquidity <br> Management in Uniswap V3</div>
+        <div class="jumb__descr text">Your Path to Simple Active Liquidity <br> Management on Uniswap V3</div>
 
         <div class="jumb__buttons">
           <button class='btn btn_blue jumb__buttons-item modal-trigger' modal-target='#soon'>Use GWEI</button>
-          <a href='gitbook link' class='btn btn_trans jumb__buttons-item'>Learn more</a>
+          <a href='http://docs.gwei.fi/' class='btn btn_trans jumb__buttons-item'>Learn more</a>
         </div>
       </div>
     </div>
@@ -156,7 +219,7 @@
         </div>
 
         <!-- Btn -->
-        <button class="btn btn_blue strategy__btn">Lern more</button>
+        <a href='http://docs.gwei.fi/' class="btn btn_blue strategy__btn">Learn more</a>
       </div>
     </section>
 
@@ -195,8 +258,8 @@
 
       <!-- Form -->
       <form action="" class="subscribe__form">
-        <input placeholder="E-mail address" type="text" class="subscribe__input input">
-        <button class="btn btn_blue subscribe__btn">Subscribe</button>
+        <input placeholder="E-mail address" type="email" class="subscribe__input input" required>
+        <button type='submit' class="btn btn_blue subscribe__btn">Subscribe</button>
       </form>
     </section>
 
@@ -220,7 +283,7 @@
         </div>
 
         <div class="roadmap__item plate">
-          <div class="roadmap__item-date">November&nbsp;1st&nbsp;- November&nbsp;30th</div>
+          <div class="roadmap__item-date">December&nbsp;15th</div>
           <div class="roadmap__item-title">Alpha Pools launch</div>
           <ul class="roadmap__item-list">
             <li>1st batch of NFTs sent out as invitations to our alpha vault/pool</li>
@@ -231,7 +294,7 @@
         </div>
 
         <div class="roadmap__item plate">
-          <div class="roadmap__item-date">December&nbsp;30th</div>
+          <div class="roadmap__item-date">January&nbsp;31th</div>
           <div class="roadmap__item-title">A new Era</div>
           <ul class="roadmap__item-list">
             <li>Governance Discussion</li>
@@ -265,7 +328,7 @@
             Do you have your own token / $GWEI?
           </div>
           <div class="faq__item-descr">
-            At some point - yes, it's not our priority as of yet. Early 2022.
+            Yes, you may read our tokenomics and LP Pool Rewards <a target="_blank" href="https://docs.gwei.fi/usdgwei-tokenomics">here</a>
           </div>
         </li>
 
@@ -282,17 +345,8 @@
   </main>
 
   @@include("../blocks/modules/footer/footer.html")
-  <!-- <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script> -->
-  <script src="js/main.js?ver=2.0"></script>
-  <script src="js/vendor.js?ver=2.0"></script>
-
-  <!-- <script>
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    const signer = provider.getSigner();
-    await provider.getBlockNumber()
-  </script> -->
-
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
 </body>
 
 </html>

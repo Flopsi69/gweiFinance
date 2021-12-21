@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GWEI Finance</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- EndFonts -->
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGKKQ5H');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body class='page'>
+  @@include("../blocks/modules/header/header.html")
+
+  <main class='main container page-inner'>
+    <!-- Vault -->
+    <section class="vault">
+      <h2 class="vault__title title">USDC/Eth</h2>
+      <div class="vault__row">
+        <div class="vault__plate plate vault-details">
+          <div class="vault-details__head">
+            <div class="text-subtitle">USDC/ETH Vaults details</div>
+            <div class="vault-details__invite-wrap">
+              <a href='#' class="vault-details__invite">
+                Invite mode
+              </a>
+              <div class="vault-details__invite-tooltip">
+                <img src="img/icon-quest.png" alt="">
+                <div class="vault-details__invite-info">
+                  Believe it or not—we will never need to rebalance storage in its classic form. Due to hybrid rebalancing, we never reach the point where we need to reallocate 50% of one asset to another. As for volatility—we’re going to use classic indicators such as Keltner Channels and/or Bollinger Bands, but the difference is that our model, which we’ve already back-tested, works wonders!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-descr vault-details__descr">
+            This vault automatically manages liquidity on Uniswap V3 for you. It concentrates its liquidity to earn higher yields and automatically adjusts its range orders as the underlying price moves so that it can continue to capture fees. (CHARM)
+          </div>
+
+          <!-- Inner plate -->
+          <div class="vault-details__subplate plate">
+            <div class="vault-details__subplate-head">
+              <div class="text-subtitle">General</div>
+            </div>
+
+            <div class="vault-details__block vault-details__tlv">
+              <div class="vault-details__row">
+                <div class="vault-details__col">
+                  <div class="vault-details__key text-descr">TVL 2,000.000</div>
+                </div>
+                <div class="vault-details__col">
+                  <div class="vault-details__value text-descr text-descr_white">40%</div>
+                </div>
+              </div>
+              <div class="vault-tlv">
+                <div class="vault-tlv_value" style='width: 40%'></div>
+              </div>
+            </div>
+
+            <div class="vault-details__block">
+              <div class="vault-details__row">
+                <div class="vault-details__col">
+                  <div class="vault-details__key text-descr">USDC/ETH</div>
+                </div>
+              </div>
+
+              <div class="vault-details__row">
+                <div class="vault-details__col">
+                  <div class="vault-details__key text-descr">USDC:1,000.000</div>
+                </div>
+                <div class="vault-details__col">
+                  <div class="vault-details__value text-descr text-descr_white">ETH: 275.25</div>
+                </div>
+              </div>
+
+              <div class="vault-compare">
+                <div class="vault-compare__list">
+                  <div class="vault-compare__item vault-compare__item_active" data-value='1'></div>
+                  <div class="vault-compare__item" data-value='2'></div>
+                  <div class="vault-compare__item" data-value='3'></div>
+                  <div class="vault-compare__item" data-value='4'></div>
+                  <div class="vault-compare__item" data-value='5'></div>
+                  <div class="vault-compare__item" data-value='6'></div>
+                  <div class="vault-compare__item" data-value='7'></div>
+                  <div class="vault-compare__item" data-value='8'></div>
+                  <div class="vault-compare__item" data-value='9'></div>
+                  <div class="vault-compare__item" data-value='10'></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inner plate -->
+          <div class="vault-details__subplate plate">
+            <div class="vault-details__subplate-head">
+              <div class="text-subtitle">Current state of Vault</div>
+              <a class='vault-details__link' href="#">
+                <img src="img/icon-link.png" alt="">
+              </a>
+            </div>
+
+            <div class="vault-details__row">
+              <div class="vault-details__col">
+                <div class="vault-details__key text-descr">USDC/ETH price</div>
+              </div>
+              <div class="vault-details__col">
+                <div class="vault-details__value text-descr text-descr_white">$3,650.25</div>
+              </div>
+            </div>
+
+            <div class="vault-details__row">
+              <div class="vault-details__col">
+                <div class="vault-details__key text-descr">Range of Open Position</div>
+              </div>
+              <div class="vault-details__col">
+                <div class="vault-details__value text-descr text-descr_white">$3,000.000 - $5,000.000</div>
+              </div>
+            </div>
+
+            <div class="vault-details__row">
+              <div class="vault-details__col">
+                <div class="vault-details__key text-descr">Pool Fee</div>
+              </div>
+              <div class="vault-details__col">
+                <div class="vault-details__value text-descr text-descr_white">0.3%</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Inner plate -->
+          <div class="vault-details__subplate plate">
+            <div class="vault-details__subplate-head">
+              <div class="text-subtitle">Missed Opportunities</div>
+            </div>
+
+            <div class="text-descr vault-details__block">
+              As for volatility—we’re going to use classic indicators such as Keltner Channels and/or Bollinger Bands, but the difference is that our model, which we’ve already back-tested, works wonders!
+            </div>
+
+            <div class="vault-details__block">
+              <div class="vault-details__row">
+                <div class="vault-details__col">
+                  <div class="vault-details__key text-descr">TX</div>
+                </div>
+                <div class="vault-details__col">
+                  <div class="vault-details__value text-descr text-descr_white">45</div>
+                </div>
+              </div>
+
+              <div class="vault-details__row">
+                <div class="vault-details__col">
+                  <div class="vault-details__key text-descr">Fees</div>
+                </div>
+                <div class="vault-details__col">
+                  <div class="vault-details__value text-descr text-descr_white">$2,000.000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vault-details__note text-descr">
+            <img src="img/icon-info.svg" alt="">
+            This system will become active automatically on reaching required limit.
+          </div>
+        </div>
+
+        <div class="vault-tabs">
+          <div class="vault-nav">
+            <div class="vault-nav__item vault-nav__item_active" data-target='.vault-tab__deposit'>Deposit</div>
+            <div class="vault-nav__item" data-target='.vault-tab__withdraw'>Withdraw</div>
+          </div>
+
+          <div class="vault-tab vault-tab__deposit vault-tab_active" style='display: block'>
+            <div class="vault__plate plate">
+              <div class="group">
+                <label class="vault__label label" for="token1">Token 1</label>
+                <input placeholder="0.0" id="token1" name="token1" class="input vault__input" type="text" required="">
+              </div>
+
+              <div class="group">
+                <label class="vault__label label" for="token2">Token 2</label>
+                <input placeholder="0.0" id="token2" name="token2" class="vault__input input" type="text" required="">
+              </div>
+
+              <div class="group">
+                <button class="btn btn_blue vault__btn">Connect wallet</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vault-tab vault-tab__withdraw">
+            <div class="vault__plate plate">
+              <div class="group">
+                <div class="vault-tab__withdraw-head">
+                  <label class="vault__label label" for="vaultShares">Vault shares</label>
+                  <div class="vault-tab__withdraw-balance">
+                    Balance: 0(Max)
+                  </div>
+                </div>
+
+                <input placeholder="0.0" id="vaultShares" name="vaultShares" class="input vault__input" type="text" required="">
+              </div>
+
+              <div class="vault-withdraw__row group">
+                <div class="vault-withdraw__row-group">
+                  <label class="vault__label label" for="wbts">WBTC</label>
+                  <input placeholder="0.0" id="wbts" name="wbts" class="input vault__input" type="text" required>
+                </div>
+
+                <div class="vault-withdraw__row-group">
+                  <label class="vault__label label" for="usdc">USDC</label>
+                  <input placeholder="0.0" id="usdc" name="usdc" class="vault__input input" type="text" required>
+                </div>
+              </div>
+
+              <div class="group">
+                <button class="btn btn_blue vault__btn">Connect wallet</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vault__plate plate vault-position">
+            <div class="text-subtitle">Your position</div>
+
+            <div class="vault-position__row group">
+              <div class="vault-position__row-group">
+                <label class="vault__label label" for="token1">Token 1</label>
+                <input placeholder="0.0" id="token1" name="token1" class="input vault__input" type="text" required="" value='1,256.00'>
+              </div>
+
+              <div class="vault-position__row-group">
+                <label class="vault__label label" for="token2">Token 2</label>
+                <input placeholder="0.0" id="token2" name="token2" class="vault__input input" type="text" value='3.53' required="">
+              </div>
+            </div>
+
+            <div class="group">
+              <label class="vault__label label" for="token2">Value, USD</label>
+              <input placeholder="0.0" id="token2" name="token2" class="vault__input input" type="text" value='$2,520.45' required="">
+            </div>
+
+            <div class="vault-position__eligible group text-descr">
+              Your eligible to mint invitation after:
+              <div class="text-descr_white vault-position__eligible-time">
+                1d 4h 35m 36s
+              </div>
+            </div>
+
+            <div class="group">
+              <button class="btn btn_blue vault__btn">To mint</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="synced text-descr">
+      Last synced block:
+      <span class="synced__value">12409471</span>
+    </div>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>
